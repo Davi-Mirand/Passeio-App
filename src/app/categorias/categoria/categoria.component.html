@@ -1,1 +1,39 @@
-<p>categoria works!</p>
+<div class="p-6 max-width mx-auto bg-white shadow-lg rounded-lg mt-6">
+  <h2 class="text-2x1 font-semibold text-gray-700 mg-4">Nova Categoria</h2>
+
+  <form action="" id="categoriaForm">
+    <!-- Campo Nome -->
+    <div class="mb-4">
+      <label class="block text-gray-600 font-medium mb-2" for="">Nome</label>
+      <input type="text"
+             id="nome"
+             name="nome"
+             placeholder="Ex: Restaurantes, Praias, Shopping"
+             class="w-full p-3 border border-gray-300 rounded shadow-sm focus:ring focus:ring-blue-400"
+             required
+             />
+      <span class="text-red-500 text-sm">
+        Campo Obrigatorio
+      </span>
+    </div>
+
+    <!-- Campo Descrição -->
+    <div class="mb-4">
+      <label class="block text-gray-600 font-medium mb-2" for="">Descrição</label>
+      <textarea
+             rows="4"
+             id="descricao"
+             name="descricao"
+             placeholder="Ex: Categoria de restaurantes"
+             class="w-full p-3 border border-gray-300 rounded shadow-sm focus:outline-none focus:ring focus:ring-blue-400"
+             ></textarea>
+             <span class="text-red-500 text-sm">
+              Campo Obrigatorio
+             </span>
+    </div>
+
+    <button type="submit" class="w-full bg-blue-600 text-white front-semibold p-3 rounded shadow hover:bg-blue-700">
+      Cadastrar Categoria
+    </button>
+    </form>
+</div>
